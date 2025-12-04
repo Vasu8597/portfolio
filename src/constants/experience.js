@@ -1,0 +1,55 @@
+export const experienceData = [
+  {
+    id: 1,
+    company: "AlphaVed Pvt Ltd",
+    position: "React JS Developer",
+    duration: "April 2022 – Present",
+    location: "Remote",
+    type: "Full-time",
+    description: "Frontend Developer with 4+ years of experience building scalable, high-performance applications using modern web technologies.",
+    responsibilities: [
+      "Built scalable web applications using React.js and Next.js",
+      "Implemented state management solutions with Redux Toolkit and Context API",
+      "Integrated REST APIs and WebSockets for real-time data synchronization",
+      "Developed complex forms using Formik and Yup validation",
+      "Wrote comprehensive tests using Jest and React Testing Library",
+      "Optimized application performance and bundle sizes",
+      "Worked in agile development environment with sprint planning",
+      "Mentored junior developers and conducted code reviews",
+      "Delivered applications across education, healthcare, analytics, and business domains",
+    ],
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Redux Toolkit",
+      "Formik",
+      "Yup",
+      "Material-UI",
+      "Tailwind CSS",
+      "REST APIs",
+      "WebSockets",
+      "Jest",
+      "React Testing Library",
+    ],
+  },
+];
+
+export const educationData = [
+  {
+    id: 1,
+    degree: "Master of Science (M.Sc.)",
+    field: "",
+    institution: "University",
+    duration: "2017 - 2019",
+    type: "Postgraduate",
+  },
+  {
+    id: 2,
+    degree: "Bachelor of Science (B.Sc.)",
+    field: "",
+    institution: "University",
+    duration: "2014 - 2017",
+    type: "Undergraduate",
+  },
+];

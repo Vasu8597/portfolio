@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vasu Kaneriya - Portfolio
 
-## Getting Started
+A modern, fully responsive portfolio website built with Next.js 14 App Router, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- ✨ Modern and clean design
+- 🌓 Dark/Light mode toggle
+- 📱 Fully responsive
+- ⚡ Optimized performance
+- 🎨 Smooth animations with Framer Motion
+- 🎯 SEO optimized
+- ♿ Accessible
+- 🧩 Reusable components
+- 📦 Clean architecture
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Theme:** next-themes
+- **Language:** JavaScript (ES6+)
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── app/
+│   ├── layout.js          # Root layout with providers
+│   ├── page.js            # Home page
+│   ├── globals.css        # Global styles
+│   ├── about/
+│   │   └── page.js        # About page
+│   ├── projects/
+│   │   └── page.js        # Projects page
+│   └── contact/
+│       └── page.js        # Contact page
+├── components/
+│   ├── ui/
+│   │   ├── Button.js      # Reusable button
+│   │   ├── Badge.js       # Reusable badge
+│   │   ├── Card.js        # Reusable card
+│   │   ├── SectionTitle.js # Section titles
+│   │   └── MotionWrapper.js # Animation wrapper
+│   ├── sections/
+│   │   ├── Hero.js        # Hero section
+│   │   ├── About.js       # About section
+│   │   ├── Skills.js      # Skills section
+│   │   ├── Experience.js  # Experience timeline
+│   │   ├── Projects.js    # Projects grid
+│   │   └── Contact.js     # Contact form
+│   ├── layout/
+│   │   ├── Navbar.js      # Navigation bar
+│   │   └── Footer.js      # Footer
+│   ├── Container.js       # Container wrapper
+│   └── ThemeProvider.js   # Theme provider
+├── constants/
+│   ├── skills.js          # Skills data
+│   ├── experience.js      # Experience data
+│   ├── projects.js        # Projects data
+│   └── socialLinks.js     # Social links
+├── lib/
+│   └── utils.js           # Utility functions
+├── tailwind.config.js     # Tailwind configuration
+├── next.config.js         # Next.js configuration
+└── package.json           # Dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+ and npm
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository or navigate to the project directory:
+```bash
+cd /Users/vasu/Desktop/portfolio
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Run the development server:
+```bash
+npm run dev
+```
 
-## Deploy on Vercel
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Update Personal Information
+
+Edit the constants files in the `/constants` directory:
+
+- `socialLinks.js` - Personal info and social media links
+- `skills.js` - Technical skills
+- `experience.js` - Work experience and education
+- `projects.js` - Project portfolio
+
+### Modify Theme Colors
+
+Edit `tailwind.config.js` to customize the color palette:
+
+```javascript
+colors: {
+  primary: { ... },
+  secondary: { ... },
+}
+```
+
+### Add New Sections
+
+1. Create a new component in `/components/sections`
+2. Import and add it to the desired page in `/app`
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## 📦 Deployment
+
+This project can be deployed to:
+
+- **Vercel** (Recommended)
+- **Netlify**
+- **Any Node.js hosting platform**
+
+### Deploy to Vercel
+
+```bash
+npm install -g vercel
+vercel
+```
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**Vasu Kaneriya**
+- Email: kaneriya52@gmail.com
+- Phone: +91 9727967339
+
+---
+
+Built with ❤️ using Next.js, Tailwind CSS, and Framer Motion
