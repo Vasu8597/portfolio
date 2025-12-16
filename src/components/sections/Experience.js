@@ -9,7 +9,7 @@ import { fadeInUp } from '@/components/ui/MotionWrapper';
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 bg-white dark:bg-gray-800">
+    <section id="experience" className="py-20 bg-white dark:bg-gray-800 overflow-hidden">
       <Container>
         <SectionTitle
           title="Work Experience"

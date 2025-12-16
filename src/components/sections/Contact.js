@@ -31,10 +31,10 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Simulate form submission
     console.log('Form submitted:', formData);
-    
+
     // Show success message
     setSubmitStatus({
       show: true,
@@ -57,7 +57,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-800">
+    <section id="contact" className="py-20 bg-white dark:bg-gray-800 overflow-hidden">
       <Container>
         <SectionTitle
           title="Get In Touch"
@@ -73,18 +73,16 @@ export default function Contact() {
                 {submitStatus.show && (
                   <MotionWrapper
                     variant="fadeIn"
-                    className={`mb-6 p-4 rounded-lg flex items-start justify-between ${
-                      submitStatus.type === 'success'
+                    className={`mb-6 p-4 rounded-lg flex items-start justify-between ${submitStatus.type === 'success'
                         ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800'
                         : 'bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800'
-                    }`}
+                      }`}
                   >
                     <div className="flex items-start">
-                      <div className={`w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0 ${
-                        submitStatus.type === 'success'
+                      <div className={`w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0 ${submitStatus.type === 'success'
                           ? 'bg-green-500'
                           : 'bg-red-500'
-                      }`}>
+                        }`}>
                         {submitStatus.type === 'success' ? (
                           <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -95,21 +93,19 @@ export default function Contact() {
                           </svg>
                         )}
                       </div>
-                      <p className={`text-sm font-medium ${
-                        submitStatus.type === 'success'
+                      <p className={`text-sm font-medium ${submitStatus.type === 'success'
                           ? 'text-green-800 dark:text-green-200'
                           : 'text-red-800 dark:text-red-200'
-                      }`}>
+                        }`}>
                         {submitStatus.message}
                       </p>
                     </div>
                     <button
                       onClick={() => setSubmitStatus({ show: false, type: 'success', message: '' })}
-                      className={`ml-3 flex-shrink-0 ${
-                        submitStatus.type === 'success'
+                      className={`ml-3 flex-shrink-0 ${submitStatus.type === 'success'
                           ? 'text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-200'
                           : 'text-red-600 hover:text-red-800 dark:text-red-400 dark:hover:text-red-200'
-                      } transition-colors`}
+                        } transition-colors`}
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

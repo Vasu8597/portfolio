@@ -8,7 +8,7 @@ import { achievements } from '@/constants/goals';
 
 export default function Achievements() {
   return (
-    <section className="py-20 bg-white dark:bg-gray-800">
+    <section className="py-20 bg-white dark:bg-gray-800 overflow-hidden">
       <Container>
         <SectionTitle
           title="Key Achievements"

@@ -9,7 +9,7 @@ import { staggerContainer, fadeInUp } from '@/components/ui/MotionWrapper';
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-900 overflow-hidden">
       <Container>
         <SectionTitle
           title="Technical Skills"

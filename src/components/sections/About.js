@@ -5,7 +5,7 @@ import { educationData } from '@/constants/experience';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-800">
+    <section id="about" className="py-20 bg-white dark:bg-gray-800 overflow-hidden">
       <Container>
         <SectionTitle
           title="About Me"
@@ -21,22 +21,22 @@ export default function About() {
               </h3>
               <div className="space-y-4 text-gray-600 dark:text-gray-400">
                 <p>
-                  I'm a passionate Frontend Developer with over 3 years of experience 
+                  I'm a passionate Frontend Developer with over 3 years of experience
                   specializing in building modern, scalable, and high-performance web applications.
                 </p>
                 <p>
-                  My expertise lies in React.js and Next.js ecosystems, where I've successfully 
-                  delivered applications across various domains including education, healthcare, 
+                  My expertise lies in React.js and Next.js ecosystems, where I've successfully
+                  delivered applications across various domains including education, healthcare,
                   analytics, and business operations.
                 </p>
                 <p>
-                  I have a strong foundation in state management using Redux Toolkit and Context API, 
-                  form handling with Formik and Yup, and creating beautiful UIs with Material-UI, 
+                  I have a strong foundation in state management using Redux Toolkit and Context API,
+                  form handling with Formik and Yup, and creating beautiful UIs with Material-UI,
                   Tailwind CSS, and other modern styling solutions.
                 </p>
                 <p>
-                  Beyond coding, I'm experienced in agile methodologies, mentoring junior developers, 
-                  conducting code reviews, and ensuring code quality through comprehensive testing 
+                  Beyond coding, I'm experienced in agile methodologies, mentoring junior developers,
+                  conducting code reviews, and ensuring code quality through comprehensive testing
                   with Jest and React Testing Library.
                 </p>
               </div>
@@ -53,7 +53,7 @@ export default function About() {
                 </h3>
                 <div className="space-y-4">
                   {educationData.map((edu) => (
-                    <div 
+                    <div
                       key={edu.id}
                       className="p-4 bg-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-700"
                     >

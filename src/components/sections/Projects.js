@@ -13,7 +13,7 @@ import { staggerContainer, fadeInUp } from '@/components/ui/MotionWrapper';
 export default function Projects() {
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900 overflow-hidden">
       <Container>
         <SectionTitle
           title="Featured Projects"

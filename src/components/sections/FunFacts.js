@@ -7,7 +7,7 @@ import { funFacts } from '@/constants/goals';
 
 export default function FunFacts() {
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary-50 to-primary-50 dark:from-gray-800 dark:to-gray-900">
+    <section className="py-20 bg-gradient-to-br from-secondary-50 to-primary-50 dark:from-gray-800 dark:to-gray-900 overflow-hidden">
       <Container>
         <SectionTitle
           title="Fun Facts About Me"
@@ -22,7 +22,7 @@ export default function FunFacts() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ 
+              whileHover={{
                 rotate: [0, -5, 5, -5, 0],
                 transition: { duration: 0.5 }
               }}
@@ -31,10 +31,10 @@ export default function FunFacts() {
               <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl transition-shadow duration-300 border-2 border-transparent hover:border-primary-500 dark:hover:border-primary-400">
                 {/* Icon with animation */}
                 <motion.div
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.1, 1],
                   }}
-                  transition={{ 
+                  transition={{
                     duration: 2,
                     repeat: Infinity,
                     repeatType: "reverse"

@@ -9,7 +9,7 @@ import { careerGoals } from '@/constants/goals';
 
 export default function Goals() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-gray-900 dark:to-gray-800">
+    <section className="py-20 bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
       <Container>
         <SectionTitle
           title="Career Goals & Vision"
